@@ -3,41 +3,65 @@
 <head>
     <meta charset="UTF-8">
       <title>Table Advanced</title>
-      <link rel="stylesheet" href="tablead.css">
+      <style>
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            width: 50%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: smaller;
+        }
+        thead {
+            background-color: red;
+            border: 1px solid #ffffff;
+            
+        }
+        th, td {
+            padding: 10px;
+    
+        }
+        tbody {
+            border-bottom: 1px solid #dddddd;
+        }
+      </style>
 </head>
 <body>
     <table border="1">
-        <tr>
-            <th rowspan="2">Thứ</th>
-            <th colspan="2">Hoạt động</th>
-        </tr>
-        <tr>
-            <th>Sáng</th>
-            <th>Chiều</th>
-        </tr>
-        <tr>
-            <td>Thứ 2</td>
-            <td>Thể dục</td>
-            <td>Hướng dẫn trò chơi mới</td>
-        </tr>
-        <tr>
-            <td>Thứ 3</td>
-            <td>Nhận biết tập nói</td>
-            <td>Rèn nề nếp kỹ năng sống</td>
-            
-        </tr>
-        <tr>
-            <td>Thứ 4</td>
-            <td>Âm nhạc</td>
-            <td>Vui chơi</td>
-            
-        </tr>
-        <tr>
-            <td>Thứ 5</td>
-            <td>Văn học</td>
-            <td>Nhận biết các giá trị sống</td>
-            
-        </tr>
+        <thead>
+            <tr>
+                <th rowspan="2">Thứ</th>
+                <th colspan="2">Hoạt động</th>
+            </tr>
+            <tr>
+                <th>Sáng</th>
+                <th>Chiều</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Thứ 2</td>
+                <td>Thể dục</td>
+                <td>Hướng dẫn trò chơi mới</td>
+            </tr>
+            <tr>
+                <td>Thứ 3</td>
+                <td>Nhận biết tập nói</td>
+                <td>Rèn nề nếp kỹ năng sống</td>
+                
+            </tr>
+            <tr>
+                <td>Thứ 4</td>
+                <td>Âm nhạc</td>
+                <td>Vui chơi</td>
+                
+            </tr>
+            <tr>
+                <td>Thứ 5</td>
+                <td>Văn học</td>
+                <td>Nhận biết các giá trị sống</td>
+                
+            </tr>
+    </tbody>
 
     </table>
 </body>

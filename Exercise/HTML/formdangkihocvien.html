@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form dang ki hoc vien</title>
+    <style>
+        table {
+            background-color: yellow;
+            width: 30%;
+        }
+        thead {
+            background-color: aqua;
+            color: blue;
+            text-align: left;
+        }
+        th{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/formdangkyhocvien.php" method="get">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">ĐĂNG KÝ HỌC VIÊN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Họ và tên</td>
+                    <td><input type="text" name="ht" style="width: 250px;"></td>
+                </tr>
+                <tr>
+                    <td>Ngày sinh</td>
+                    <td><input type="text" name="ns" style="width: 100px;"></td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td><input type="radio" name="gt" value="Nam">Nam <input type="radio" name="gt" value="Nữ">Nữ</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Địa chỉ</td>
+                    <td rowspan="2"><input type="text" name="dc" style="height: 40px;"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>       
+                <tr>
+                    <td>Lớp</td>
+                    <td><select name="chọn lớp">
+                        <option value="cl">-Chọn lớp-</option>
+                        <option value="cl">Lý</option>
+                        <option value="cl">Toán</option>
+                        <option value="cl">Hóa</option>
+                        <option value="cl">Văn</option>
+                        <option value="cl">Anh</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email"></td>
+                </tr> 
+                <tr>
+                    <td>Điện thoại</td>
+                    <td><input type="text" name="dt"></td>
+                </tr> 
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Đăng ký"> <input type="reset" value="Nhập lại"></td>
+                </tr>                     
+
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
