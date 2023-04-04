@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form HTML</title>
+</head>
+<body>
+    <form action="/action_page.php" method="get">
+        <fieldset>
+            <legend>Persional infomation</legend>
+            First Name <br>
+            <input type="text" name="firstname" value="Trần">
+            <br>
+            Last Name <br>
+            <input type="text" name="lastname" value="Nhật"><br><br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+    <form action="/action_page.php" method="post">
+        <fieldset>
+            <legend>Hobbie</legend>
+            Account: <input type="text" name="account" value="admin"><br>
+            Password: <input type="password" name="password"><br>
+            Sở thích: <br>
+            <label><input type="checkbox" name="hobby" value="sport">Thể thao</label><br>
+            <label><input type="checkbox" name="bobby" value="cook">Nấu ăn</label><br>
+            <label><input type="checkbox" name="hobby" value="tour">Du lịch</label><br>
+            <input type="reset" value="reset">
+            <input type="submit" value="submit">
+   
+        </fieldset>
+    </form>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Choose Hobby</legend>
+            Account: <input type="text" name="account" value="admin"><br>
+            Password: <input type="password" name="password"><br>
+            Sở thích: <br>
+            <label><input type="radio" name="hobby" value="sport" checked>Thể thao</label><br>
+            <label><input type="radio" name="hobby" value="cook">Nấu ăn</label><br>
+            <label><input type="radio" name="hobby" value="tour">Du lịch</label><br>
+            <input type="reset" value="reset">
+            <input type="submit" value="submit">
+            <input type="hidden" name="hidden" id="12345"><br>
+            <button>
+                <img src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/b2926338b6329af812e79c06363e2ec2.png" alt="Codegym" width="100" height="50">
+            </button><br>
+            <textarea name="textarea" id="1234" cols="30" rows="10">chuoi này rat dai</textarea>
+
+        </fieldset>
+    </form>
+</body>
+</html>
