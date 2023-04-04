@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai tap 2</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            
+        }
+      
+        tbody {
+            text-align: left;
+            
+
+        }
+        th {
+            padding: 6px;
+        }
+        td {
+            padding: 5px;
+        }
+        tr, th, td {
+            border: 1px solid black;
+        }
+        tfoot {
+            text-align: center;
+        }
+        .trong {
+            border: 1px solid white;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Full Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <td>$1000</td>
+                <td rowspan="4">Company Founder</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve Jobs</td>
+                <td>Founder Apple</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Founder Google</td>
+                <td>$1100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zuckeberg</td>
+                <td>Founder Facebook</td>
+                <td>$1300</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Expense</td>
+                <td>$4600</td>
+                <td class="trong"></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
