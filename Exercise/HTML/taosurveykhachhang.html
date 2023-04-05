@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form lay survey khach hang</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <form>
+        <table border="1" style="border-collapse: collapse; width: 800px; text-align: left; border-color: white;">
+            <tr>
+                <th style="font-size: 30px;border-top: solid gray;">Market Research Survey</th>
+            </tr>
+            <tr>
+                <td style="border-bottom: dashed gray;">Please take a few moments to complete this satisfaction survey.</td>
+            </tr>
+        </table><br>
+        <b>What is your age range?</b> <br>
+        <input type="number" placeholder="18-24"><br><br>
+        <b>What is your yearly income range?</b> <br>
+        <input type="number" placeholder="$0 - $25,000"> <br><br>
+        <b>Gender</b><br>
+        <input type="radio" name="gender">Male <br>
+        <input type="radio" name="gender">Female <br><br>
+        <b>Which of the following products have you purchased in the last 2 months. please check all that apply.</b> <br>
+        <input type="checkbox" name="pr" value="Product 1">Product 1 <br>
+        <input type="checkbox" name="pr" value="Product 2">Product 2 <br>
+        <input type="checkbox" name="pr" value="Product 3">Product 3 <br><br>
+        <b>How often would you use our new product?</b> <br>
+        <input type="radio" name="of">Daily <br>
+        <input type="radio" name="of">Weekly <br>
+        <input type="radio" name="of">Monthly <br><br>
+        <b>What would you pay for the new product?</b> <br>
+        <!--<b>$</b> <input type="number" style="width: 80px;">.<input type="number" style="width: 20px"><br>
+        &nbsp;&nbsp;Dollars&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cents <br>-->
+        <table>
+            <tr>
+                <td><b>$</b><input type="number" style="width: 80px;">.</td>
+                <td><input type="number" style="width: 20px;"></td>
+            </tr>
+            <tr>
+                <td>Dollars</td>
+                <td>Cents</td>
+            </tr>
+        </table><br>
+        <b>What features would you like to see in the new product</b><br>
+        <textarea name="" id="" cols="106" rows="10"></textarea><br><br>
+        Please rate your level of agreement with the following statement. <br>
+        <table border="1" style="border-collapse: collapse; width: 800px;">
+            <tbody>
+                <tr>
+                    <th style="height: 40px;"></th>
+                    <th>Strongly Disagree</th>
+                    <th>Disagree</th>
+                    <th>Agree</th>
+                    <th>Stronglt Agree</th>
+                </tr>
+                <tr>
+                    <th align="left">Our products are priced fairly.</th>
+                    <td style="text-align: center;"><input type="radio" name="check"><br>1</td>
+                    <td style="text-align: center;"><input type="radio" name="check"><br>2</td>
+                    <td style="text-align: center;"><input type="radio" name="check"><br>3</td>
+                    <td style="text-align: center;"><input type="radio" name="check"><br>4</td>
+                </tr>
+                <tr>
+                    <th align="left">Our products are high quality.</th>
+                    <td style="text-align: center;"><input type="radio" name="check1"><br>1</td>
+                    <td style="text-align: center;"><input type="radio" name="check1"><br>2</td>
+                    <td style="text-align: center;"><input type="radio" name="check1"><br>3</td>
+                    <td style="text-align: center;"><input type="radio" name="check1"><br>4</td>
+                </tr>
+                <tr>
+                    <th align="left">You would recommend our product to a friend or coworker.</th>
+                    <td style="text-align: center;"><input type="radio" name="check2"><br>1</td>
+                    <td style="text-align: center;"><input type="radio" name="check2"><br>2</td>
+                    <td style="text-align: center;"><input type="radio" name="check2"><br>3</td>
+                    <td style="text-align: center;"><input type="radio" name="check2"><br>4</td>
+                </tr>
+            </tbody>
+        </table><br>
+        <button type="submit">Submit</button>
+    </form> 
+</body>
+</html>
