@@ -2,5 +2,5 @@
 
 ## Bài tập
 
-+ GIF
 + HTML
++ JavaScript
