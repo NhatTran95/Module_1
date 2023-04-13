@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <img id="imgBall" src="https://static.nike.com/a/images/t_default/32c3e405-4590-42fd-ad5d-6b498ccad121/fc-barcelona-strike-soccer-ball-T5TS46.png" alt="ball">
-    <p>Click the button below to move the ball</p>
-    <input type="button" value="Click me!">
+    <form action="">
+        <img id="imgBall"
+            src="https://static.nike.com/a/images/t_default/32c3e405-4590-42fd-ad5d-6b498ccad121/fc-barcelona-strike-soccer-ball-T5TS46.png"
+            alt="ball">
+        <p>Click the button below to move the ball</p>
+        <input type="button" value="move right" onclick="moveRight();">
+        <input type="button" value="move left" onclick="moveLeft();">
+    </form>
     <script>
+        // let imgball = null;
+        // imgball = document.getElementById('imgBall');
+        let imgball = document.getElementById('imgBall');
         function init() {
-            let imgBall = document.getElementById('imgBall');
-            imgBall.style.position = 'relative'
+            imgball.style.position = 'relative';
+            imgball.style.left = '0px';
         }
+        function moveRight() {
+            imgball.style.left = parseInt(imgball.style.left) + 20 + 'px';
+        }
+        function moveLeft(){
+            imgball.style.left = parseInt(imgball.style.left) + -20 + 'px';
+        }
+        window.onload = init;
     </script>
 </body>
+
 </html>
