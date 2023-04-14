@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let sum = 0;
+        let num = parseInt(prompt("Enter a number"));
+        while (num !== -1) {
+            sum += num;
+            alert(`Số vừa nhập là ${num} và tổng hiện tại là ${sum}`);
+            num = parseInt(prompt("Enter a number"));
+        }
+        document.write(`Tổng các số vừa nhập bằng: ${sum}`);
+    </script>
+</body>
+
+</html>
