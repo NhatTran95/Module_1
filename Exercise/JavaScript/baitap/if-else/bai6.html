@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <caption><h3>Mức hoa hồng</h3></caption>
+        <tr>
+            <th></th>
+            <th>Mức 1</th>
+            <th>Mức 2</th>
+            <th>Mức 3</th>
+        </tr>
+        <tr>
+            <th>Doanh số</th>
+            <td>100.000.000</td>
+            <td>200.000.000</td>
+            <td>300.000.000</td>
+        </tr>
+        <tr>
+            <th>Mức thưởng</th>
+            <td>1%</td>
+            <td>2%</td>
+            <td>3%</td>
+        </tr>
+    </table>
+    <p>Nhập doanh số của bạn: <input type="number" id="input"></p>
+    <p><button type="button" onclick="btn()">Kiểm tra hoa hồng</button></p>
+    <p id="hh">Hoa hồng của bạn:</p>
+    <script>
+        function btn(){
+        let money = Number(document.getElementById('input').value);
+        if (money >= 10e7 && money <20e7) { 
+            let dso = money * 0.01;
+            document.getElementById('hh').innerHTML=`Hoa hồng bạn nhận được là : ${dso} vnđ`
+        }
+        else if (money >= 20e7 && money < 30e7) {
+            let dso = money * 0.02;
+            document.getElementById('hh').innerHTML=`Hoa hồng bạn nhận được là : ${dso} vnđ`
+        }
+        else if (money >= 30e7) {
+            let dso = money * 0.03;
+            document.getElementById('hh').innerHTML=`Hoa hồng bạn nhận được là : ${dso} vnđ`
+        }
+        else document.getElementById('hh').innerHTML='Bạn chưa đạt doanh số để nhận hoa hồng'
+    }
+        
+    </script>
+</body>
+</html>

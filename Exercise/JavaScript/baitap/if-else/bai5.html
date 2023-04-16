@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = Number(prompt("Nhập điểm kt miệng"));
+        let b = Number(prompt("Nhập điểm kiểm tra 15p"));
+        let c = Number(prompt("Nhập điểm kiểm tra 1 tiết"));
+        let gk = Number(prompt("Nhập điểm kiểm tra giữa kì"));
+        let ck = Number(prompt("Nhập điểm kiểm tra cuối kì"));
+        if (a >= 0 && a <= 10 && b >= 0 && b <= 10 && c >= 0 && c <= 10 && gk >= 0 && gk <= 10 && ck >= 0 && ck <= 10) {
+            let dtb = (a + b + c + gk * 2 + ck * 3) / 8;
+            if (0 <= dtb && dtb < 4.5) {
+                alert('Điểm trung bình là ' + dtb.toFixed(1) + ' - Xếp loại Yếu')
+            }
+            else if (dtb >= 4.5 && dtb < 6.5) {
+                alert('Điểm trung bình là ' + dtb.toFixed(1) + ' - Xếp loại Trung Bình')
+            }
+            else if (dtb >= 6.5 && dtb < 8.5) {
+                alert('Điểm trung bình là ' + dtb.toFixed(1) + ' - Xếp loại Khá')
+            }
+            else if (dtb >= 8.5 && dtb <= 10) {
+                alert('Điểm trung bình là ' + dtb.toFixed(1) + ' - Xếp loại Giỏi')
+            }
+        }
+        else alert('Vui lòng kiểm tra lại điểm đã nhập')
+    </script>
+</body>
+
+</html>
