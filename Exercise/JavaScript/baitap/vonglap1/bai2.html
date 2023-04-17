@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tem = Number(prompt("nhập nhiệt độ hiện tại"));
+        while (tem >100 ) {
+            alert("Hãy giảm nhiệt độ xuống");
+            tem = Number(prompt("nhập nhiệt độ hiện tại"));
+        }
+        while (tem < 20) {
+            alert("Hãy tăng nhiệt độ lên");
+            tem = Number(prompt("nhập nhiệt độ hiện tại"));
+        }
+        alert(`nhiệt độ hiện tại là ${tem}`)
+    </script>
+</body>
+</html>

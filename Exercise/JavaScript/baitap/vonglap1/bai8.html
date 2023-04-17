@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="btnGuess()">Chơi</button>
+    <script>
+        function btnGuess() {
+            debugger;
+            let number = Number(prompt("Số bạn muốn đoán trong khoảng lớn nhất là bao nhiêu?"));
+            let numberRandom = Math.floor(Math.random() * number);
+            console.log(numberRandom);
+            let number_check = Number(prompt ("Nhập số bạn đoán"));
+            let count = 0;
+            while (number_check !== numberRandom) {
+                count++;
+                if (count == 4) {
+                    alert("Bạn hết số lần đoán")
+                    break;
+                } else if (number_check < numberRandom) {
+                    alert("Số bạn đoán bé hơn");
+                } else {
+                    alert ("Số bạn đoán lớn hơn")
+                }
+                number_check = Number(prompt ("Nhập số bạn đoán"));   
+            }
+            if (number_check == numberRandom) {
+                alert("Chúc mừng bạn đã đoán đúng")
+            }
+        }
+    </script>
+</body>
+</html>
