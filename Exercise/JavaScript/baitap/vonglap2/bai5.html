@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+            let loan = Number(prompt("Nhập số tiền muốn vay"));
+            let interestRate = Number(prompt("Nhập lãi suất hàng tháng"));
+            let month = Number(prompt("Nhập số tháng vay"));
+            let payment = loan * ((1 + interestRate) ** month);
+            // document.write("vay số tiền " + numberWithCommas(loan) + " với lãi suất "+ interestRate + " trong " + month + " tháng thì phải trả "+ numberWithCommas(payment.toFixed(0)))
+            document.write(`vay số tiền ${numberWithCommas(loan)} vnđ với lãi suất ${interestRate} trong ${month} tháng thì phải trả ${numberWithCommas(payment.toFixed(0))} vnđ`)
+    </script>
+</body>
+
+</html>
