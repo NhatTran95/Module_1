@@ -11,13 +11,19 @@
 <body>
     <script>
         let sum = 0;
-        let num = parseInt(prompt("Enter a number"));
-        while (num !== -1) {
+        let num = 0;
+        while (num != -1) {
+            num = parseFloat(prompt("Enter a number"));
+            if (isNaN(num)) {
+                alert('Hãy nhập vào 1 số')
+            }
+            else if (num != -1) {
             sum += num;
             alert(`Số vừa nhập là ${num} và tổng hiện tại là ${sum}`);
-            num = parseInt(prompt("Enter a number"));
+        }
         }
         document.write(`Tổng các số vừa nhập bằng: ${sum}`);
+        
     </script>
 </body>
 
