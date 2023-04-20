@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numberN = parseInt(prompt("nhập số nguyên n"));
+        let numberX = Number(prompt("Nhập số x ="));
+        let sum = 0;
+        for (let i = 1; i <= numberN; i++){
+            let sumM = 0;
+            for (let j = 1; j <= i; j++){
+                sumM += j;
+            }
+            sum += numberX**i/sumM;
+        }
+        document.write(`S(n) = x + x^2/(1+2) + x^3/(1+2+3) + ... + x^n/(1+2+3+...+N) <br> Với n = ${numberN} và x = ${numberX} ta có S(n) = ${sum.toFixed(2)}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numberN = parseInt(prompt("Nhập số nguyên N"));
+        let sum1 = 0;
+        for (let number1 = 1; number1 <= numberN; number1++){
+            sum2 = 0;
+            for (let number2 = 1; number2 <=number1; number2++ ){
+                sum2 += number2;
+            }
+            sum1 += 1/sum2;
+        }
+        document.write(`S(n) = 1 + 1/(1 + 2) + 1/(1 + 2 + 3) + ... + 1/(1 + 2 + 3 + ... + N) <br> với N = ${numberN} ta có S(n) = ${sum1.toFixed(2)}`)
+    </script>
+</body>
+</html>

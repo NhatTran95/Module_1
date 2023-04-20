@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numberX = Number(prompt("Nhập số x"));
+        let numberN = parseInt(prompt('Nhập số nguyên n'));
+        let sum = 0;
+        for (let i = 0; i <=numberN; i++){
+            let factorial = 1;
+            for (let j = 1; j <= 2*i; j++){
+                factorial *= j; 
+            }
+            sum += numberX**(2*i)/factorial;
+        }
+        document.write(`Tính S(n) = 1 + x^2/2! + x^4/4! +...+ x^2n/(2n)! <br> Với n = ${numberN} và x = ${numberX} ta có S(n) = ${sum.toFixed(2)}`);
+    </script>
+</body>
+</html>

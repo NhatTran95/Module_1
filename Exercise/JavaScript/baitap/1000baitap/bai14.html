@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+        let numberX = Number(prompt("Nhập số x ="));
+        let numberN = parseInt(prompt("Nhâp số nguyên n"));
+        let sum = 0;
+        for (let number = 0; number <= numberN; number++){
+            sum += numberX ** (2 * number + 1);
+        }
+        document.write(`S(n) = x + x^3 + x^5 + ... + x^(2n +1) <br> Với x = ${numberX} và n = ${numberN} ta có S(n) = ${numberWithCommas(sum)}`)
+    </script>
+</body>
+</html>
