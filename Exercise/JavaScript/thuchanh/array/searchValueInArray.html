@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = Number(prompt("enter a number"));
+        let array = [12, -5, 11, 20, -8, 0, 9, 3, 11];
+        let count = -1;
+        for (let index = 0; index < array.length; index++) {
+            if (array[index] == number) {
+                document.write(`Số ${number} có xuất hiện trong mảng tại vị trí có index = ${index} <br>`);   
+                count = index;
+            }     
+        }
+        if (count == -1) document.write(`Số ${number} không xuất hiện trong mảng`)
+    </script>
+</body>
+</html>
