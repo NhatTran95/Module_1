@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h2><b>Type anthing slowly</b></h2>
+        <textarea name="textarea" id="textArea" cols="40" rows="10" onkeydown="writeText()"></textarea>
+    </div>
+    <script>
+        let note = "Anh Nhân thích Mai mà không dám nói!";
+        let arrayNote = [];
+        for (let i = 0; i < note.length; i++) {
+            arrayNote.push(note[i]);
+        }
+        // console.log(arrayNote);
+        function writeText() {
+            let display = "";
+            let text = document.getElementById("textArea").value;
+            for (let i = 0; i < text.length; i++) {
+                display += arrayNote[i];
+                if (i == arrayNote.length) {
+                    display = "";
+                }
+                document.getElementById("textArea").value = display;
+            }
+            setTimeout("writeText()", 0.5);
+        }
+    </script>
+</body>
+
+</html>
