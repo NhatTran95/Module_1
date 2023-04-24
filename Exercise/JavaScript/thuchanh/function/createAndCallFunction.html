@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+            result = "Vâng anh Nhân thích Mai lắm cơ!";
+        } else {
+            result = "Không, anh đây không biết yêu là gì";
+        }
+        return result;
+    }
+    
+    let confirmAnswer = confirm("Anh Nhân có thích Mai không?");
+    let theAnswer = processConfirm(confirmAnswer);
+    alert(theAnswer);
+    
+</script>
+</body>
+</html>

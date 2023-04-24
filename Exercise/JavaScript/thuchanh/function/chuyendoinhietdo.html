@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3><b>Temperature Converter</b></h3>
+    <p>Fahrenheit
+        <input type="number" id="inputValue" onchange="changeValueFahrenheit()">
+    </p>
+    <p>Celcius: <span id="celcius"></span> </p>
+    <script>
+        function temperatureConverter() {
+            let fahrenheit = document.getElementById("inputValue").value;
+            let celcius = (fahrenheit - 32) / 1.8;
+            return celcius;
+        }
+        function changeValueFahrenheit(){
+            document.getElementById("celcius").innerHTML = temperatureConverter();
+        }
+        
+    </script>
+</body>
+</html>
