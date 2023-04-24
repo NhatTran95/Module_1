@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let stars = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        function searchStarWithConstellation(nameStar) {
+            for (let i = 0; i < stars.length; i++) {
+                if (stars[i] === nameStar) {
+                    alert(constellation[i]);
+                }
+                else if (i == stars.length - 1){
+                    alert("no find!");
+                }
+            }
+        }
+        let star = prompt("enter a name Star:");
+        searchStarWithConstellation(star);
+    </script>
+</body>
+
+</html>
