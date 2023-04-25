@@ -1,0 +1,33 @@
+<!-- Viết hàm liệt kê các vị trí mà giá trị tại đó là giá trị âm trong mảng 1 chiều các số thực -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let width = parseInt(prompt("nhập độ dài mảng"));
+        let numbers = new Array(width);
+        for (let i = 0; i < numbers.length; i++) {
+            numbers[i] = Number(prompt(`nhập giá trị phần tử numbers[${i}]`));
+        }
+        document.write(`Ta có mảng: [${numbers.join(', ')}]`);
+        function listPositionsWithNegativeValues(array) {
+            let indexs = [];
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] < 0) {
+                    indexs.push(i);
+                }
+            }
+            document.write(`<br> các vị trí có giá trị âm trong mảng là ${indexs}`)
+        }
+        listPositionsWithNegativeValues(numbers);
+    </script>
+</body>
+
+</html>

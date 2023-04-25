@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Symmetry</title>
+</head>
+
+<body>
+    <script>
+        function isPalindrome(string) {
+            let first = 0;
+            let last = string.length -1;
+            let result;
+            while (first < last) {
+                if (string[first] == string[last]) {
+                    first++;
+                    last--;
+                }
+                else break;
+            }
+            console.log(first);
+            console.log(last);
+            if (first >= last) {
+                result = "true";
+            }
+            else result = "false";
+            return result;
+        }
+        let texts1 = "oppaappo";
+        let texts2 = "render";
+        console.log(isPalindrome(texts1));
+        console.log(isPalindrome(texts2));
+    </script>
+</body>
+
+</html>
