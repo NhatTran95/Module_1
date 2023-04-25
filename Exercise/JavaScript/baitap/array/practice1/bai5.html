@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = new Array(10);
+        for (let i = 0; i < numbers.length; i++) {
+            numbers[i] = parseInt(prompt(`Enter element ${i} :`));
+        }
+        let countIntegerLessThan0 = 0;
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] < 0) {
+                countIntegerLessThan0 += 1;
+            }
+        }
+        document.write(`[${numbers}] <br>`);
+        document.write(`array have ${countIntegerLessThan0} integers less than 0`)
+        
+     
+    </script>
+</body>
+</html>

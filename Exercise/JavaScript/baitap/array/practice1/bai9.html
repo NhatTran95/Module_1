@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createArray(size, min, max) {
+            let numbers = new Array(size);
+            for (let i = 0; i < numbers.length; i++) {
+                numbers[i] = Math.ceil(Math.random() * (max - min + 1));
+            }
+            return numbers;
+        }
+        function concatArray(array1, array2) {
+            let array = array1.concat(array2);
+            return array;
+        }
+        let numbers1 = createArray(10, 1, 20);
+        let numbers2 = createArray(10, 20, 40);
+        let numbers3 = concatArray(numbers1, numbers2);
+        document.write(`[${numbers1}]`);
+        document.write(`<br>`);
+        document.write(`[${numbers2}]`);
+        document.write(`<br>`);
+        document.write(`[${numbers3}]`);
+    </script>
+</body>
+</html>

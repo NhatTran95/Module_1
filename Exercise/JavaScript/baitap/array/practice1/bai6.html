@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = new Array(10);
+        for (let i = 0; i < numbers.length; i++) {
+            numbers[i] = parseInt(prompt(`Enter element ${i} :`));
+        }
+        document.write(`[${numbers}]`);
+        let number = parseInt(prompt("enter a number:"));
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] == number) {
+                alert(`${number} is in the array`);
+                break;
+            }
+            else if (i == numbers.length - 1) {
+                alert(`${number} is not in the array`)
+            }
+        }
+    </script>
+</body>
+</html>
