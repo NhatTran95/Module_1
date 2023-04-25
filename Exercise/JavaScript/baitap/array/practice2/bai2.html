@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createArray(size) {
+            let array = new Array(size);
+            for (let i = 0; i < array.length; i++) {
+                array[i] = prompt(`enter element ${i}:`);
+            }
+            return array;
+        } 
+        function reverseArray(array) {
+            array = array.reverse();
+            return array;
+        }  
+        function displayArray(array) {
+            for (let i = 0; i < array.length; i++) {
+                document.write(`${array[i]}\t`)
+            }
+        }
+        let numbers = createArray(10);
+        numbers = reverseArray(numbers);
+        displayArray(numbers);     
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function createArray(size) {
+            let array = new Array(size);
+            for (let i = 0; i < array.length; i++) {
+                array[i] = prompt(`enter element ${i}:`);
+            }
+            return array;
+        }
+        function checkTheSame(string1, string2) {
+            let check = true;
+            if (string1.length == string2.length) {
+                for (let i = 0; i < string1.length; i++) {
+                    if (string1[i] != string2[i]) {
+                        check = false;
+                        break;
+                    }
+                }
+            }
+            else check = false;
+            if (check) {
+                alert("two string the same");
+            }
+            else alert("two string not the same");
+        }
+        let string11 = createArray(5);
+        let string21 = createArray(6);
+        document.write(string11);
+        document.write(`<br> ${string21}`);
+        checkTheSame(string11, string21);
+    </script>
+</body>
+
+</html>

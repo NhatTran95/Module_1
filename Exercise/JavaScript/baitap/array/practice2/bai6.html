@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createArray(size) {
+            let texts = new Array(size);
+            for (let i = 0; i < texts.length; i++) {
+                texts[i] = prompt(`enter a text ${i}`);
+            }
+            return texts;
+        }
+        let textsArray = createArray(15);
+        document.write(textsArray.join(''));
+        for (let i = 0; i < textsArray.length; i++) {
+            if (textsArray[i] === "-") {
+                textsArray[i] = "_";
+            }
+        }
+        document.write(`<br>`);
+        document.write(textsArray.join(''));
+    </script>
+</body>
+</html>

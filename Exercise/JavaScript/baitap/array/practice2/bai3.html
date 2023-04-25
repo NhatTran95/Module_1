@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createArray(size) {
+            let array = new Array(size);
+            for (let i = 0; i < array.length; i++) {
+                array[i] = prompt(`enter element ${i}:`);
+            }
+            return array;
+        }
+        function countNumber(array) {
+            count = 0;
+            for (let i = 0; i < array.length; i++) {
+                if (!isNaN(array[i])) {
+                    count++;
+                }
+            }
+            return count;
+        }
+        let textNumbers = createArray(10);
+        document.write(textNumbers);
+        let countValueNumber = countNumber(textNumbers);
+        document.write(`<br> number value is: ${countValueNumber}`);
+    </script>
+</body>
+</html>
