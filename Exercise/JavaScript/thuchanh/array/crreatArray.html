@@ -1,0 +1,29 @@
+<!-- cho người dùng nhập một số, sau đó tạo mảng có độ dài bằng số vừa nhập, các giá trị trong mảng được người dùng nhập vào , hiển thị mảng xem kết quả-->
+<!-- <html>
+    <script>
+        let number = Number(prompt("Enter a number:"));
+        let numbers = new Array(number);
+        for (let i = 0; i < numbers.length; i++) {
+            numbers[i] = Number(prompt(`Enter value element ${i}:`));
+        }
+        console.log(numbers);
+    </script>
+</html> -->
+
+<!-- cho người dùng nhập 2 giá trị row và column, tạo mảng trong mảng, mảng ngoài có độ dài bằng row, mảng trong có độ dài bằng column, các giá trị trong mảng do người dùng nhập vào 
+ xuất mảng ra xem kết quả-->
+
+ <html>
+    <script>
+        let row = Number(prompt("Enter row"));
+        let column = Number(prompt("Enter column"));
+        let numbers = new Array(row);
+        for (let i = 0; i < numbers.length; i++) {
+            numbers[i] = new Array(column);
+            for (let j = 0; j < numbers[i].length; j++) {
+                numbers[i][j] = Number(prompt(`Enter value element ${i}${j}:`));
+            }
+        }
+        console.log(numbers);
+    </script>
+ </html>

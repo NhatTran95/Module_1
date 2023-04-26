@@ -1,11 +1,11 @@
-function createArrayRandom() {
-    let numbers = new Array(5);
+function createArrayRandom(size, min, max) {
+    let numbers = new Array(size);
     for (let i = 0; i < numbers.length; i++) {
-        numbers[i] = Math.floor(Math.random() * 10) + 1;
+        numbers[i] = Math.floor(Math.random() * (max - min + 1)) + min;
     }
     console.log(numbers);
 }
-createArrayRandom();
-createArrayRandom();
-createArrayRandom();
-createArrayRandom();
+createArrayRandom(5, 5, 15);
+createArrayRandom(10, 9, 20);
+createArrayRandom(7, 6, 24);
+createArrayRandom(8, 7, 30);

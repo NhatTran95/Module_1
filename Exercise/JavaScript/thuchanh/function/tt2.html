@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createArray(n, max, min) {
+            let numbers = new Array(n);
+            for (let i = 0; i < numbers.length; i++) {
+                numbers[i] = Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+            return numbers;
+        }
+        function displayArray(array) {
+            for (let i = 0; i < array.length; i++) {
+                document.write(array[i] + "<br>");
+            }
+        }
+        function findMaxValue(array) {
+            let valueMax = 0;
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] > valueMax) {
+                    valueMax = array[i];
+                }
+            }
+            return valueMax;
+        }
+        let numbers1 = createArray(5, 20, 1);
+        displayArray(numbers1);
+        let max = findMaxValue(numbers1);
+        document.write(`value max is: ${max}`);
+
+
+    </script>
+</body>
+</html>

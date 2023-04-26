@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="h_1"></h1>
+    <script>
+        function createArrayRandom(size, min, max) {
+            let numbers = new Array(size);
+            for (let i = 0; i < numbers.length; i++) {
+                numbers[i] = Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+            return numbers;
+        }
+        let numbers1 = createArrayRandom(5, 5, 15);
+        let numbers2 = createArrayRandom(10, 9, 20);
+        let numbers3 = createArrayRandom(10, 9, 20);
+        console.log(numbers1);
+        document.write(numbers2);
+        document.getElementById("h_1").innerText = numbers3;
+    </script>
+</body>
+
+</html>
