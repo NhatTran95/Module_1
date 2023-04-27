@@ -30,6 +30,8 @@ let MyDate = function(day, month, year) {
     }
 }
 let date = new MyDate(20, 6, 1995);
+let time1 = date.toString();
+console.log(time1);
 // date.setDay(30);
 // date.setMonth(4);
 // date.setYear(1995);
